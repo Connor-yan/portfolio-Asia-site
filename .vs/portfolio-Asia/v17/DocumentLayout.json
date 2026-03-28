@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\showreel.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:showreel.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "project-3.html",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-3.html",
+              "RelativeDocumentMoniker": "project-3.html",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-3.html",
+              "RelativeToolTip": "project-3.html",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAmwIgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-21T06:36:43.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-21T06:35:03.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "style.css",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\css\\style.css",
+              "RelativeDocumentMoniker": "css\\style.css",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\css\\style.css",
+              "RelativeToolTip": "css\\style.css",
+              "ViewState": "AgIAAB4IAAAAAAAAAAAmwEcIAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-21T06:38:01.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "about.html",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\about.html",
+              "RelativeDocumentMoniker": "about.html",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\about.html",
+              "RelativeToolTip": "about.html",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAmwKUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-21T06:35:51.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "showreel.html",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\showreel.html",
+              "RelativeDocumentMoniker": "showreel.html",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\showreel.html",
+              "RelativeToolTip": "showreel.html",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAmwIwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-21T06:35:18.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.js",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\js\\main.js",
+              "RelativeDocumentMoniker": "js\\main.js",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\js\\main.js",
+              "RelativeToolTip": "js\\main.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-21T06:43:00.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "project-2.html",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-2.html",
+              "RelativeDocumentMoniker": "project-2.html",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-2.html",
+              "RelativeToolTip": "project-2.html",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAmwIgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-21T06:36:23.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "project-1.html",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-1.html",
+              "RelativeDocumentMoniker": "project-1.html",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\project-1.html",
+              "RelativeToolTip": "project-1.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-21T06:36:01.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "projects.html",
+              "DocumentMoniker": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\projects.html",
+              "RelativeDocumentMoniker": "projects.html",
+              "ToolTip": "F:\\\u7B2C\u4E09\u5B66\u671F\\Portfolio\\portfolio-Asia\\projects.html",
+              "RelativeToolTip": "projects.html",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwD8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-21T06:35:27.542Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
