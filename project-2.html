@@ -34,8 +34,11 @@
                 </div>
 
                 <div class="project-hero-right">
-                    <div class="placeholder-card project-hero-image">
-                        <span>PROJECT HERO IMAGE PLACEHOLDER</span>
+                    <div class="project-hero-image-frame fx-hero-image-frame">
+                        <img class="project-hero-image-real" src="images/Image_project2.jpg" alt="Project 2 hero image">
+                        <div class="hero-image-overlay-grid"></div>
+                        <div class="hero-image-overlay-vignette"></div>
+                        <div class="hero-image-overlay-scan"></div>
                     </div>
                 </div>
             </div>
@@ -104,36 +107,110 @@
                 <div class="project-text-content">
                     <h2>Process & Development</h2>
                     <p>
-                        Use this section to explain your production process, artistic experiments,
-                        technical challenges, and the development path of the work.
+                        I started *Dragon* with the goal of challenging the homogenized representation of dragons in contemporary animation. I wanted to showcase how Chinese dragon patterns evolved across different eras, tracing their transformation alongside human civilization. I chose ink-wash as the primary medium because its flowing quality suits the dragon's fluid form. I also structured the animation around the logic of natural elements—gold, wood, water, fire, earth—to guide the visual transition from natural forms to cultural symbols. My aim was to help audiences from different cultures better understand the depth of Chinese dragon imagery.
                     </p>
                     <p>
-                        You can also discuss what your role was, what references inspired the
-                        final direction, and what you learned through making it.
+                        A significant difficulty was visualizing the evolutionary process without making it feel like a dry historical timeline. Early versions were too linear and lacked emotional engagement. I solved this by using color and line weight to differentiate eras—darker, rougher strokes for early depictions, smoother and more intricate lines for later dynasties. I also added subtle cultural motifs layered into the backgrounds to connect each dragon form to its historical context. From this project, I learned that cultural storytelling benefits from balancing research with expressive visual rhythm. It reinforced my interest in using animation for cultural preservation and cross-cultural communication.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery -->
-        <section class="project-gallery-section">
+        <!-- Reflection -->
+        <section class="project-text-section">
+            <div class="project-text-grid">
+                <div class="project-text-label">
+                    <span>REFLECTION</span>
+                </div>
+
+                <div class="project-text-content">
+                    <h2>Process Reflection</h2>
+                    <p>
+                        Creating Dragon taught me that cultural storytelling requires more than visual accuracy—it demands a careful balance between research and emotional rhythm. Early in the process, I struggled with making the evolution of dragon patterns feel engaging rather than like a historical lecture. My initial cuts were too linear, and the pacing felt flat. I realized that I needed to let the ink-wash style guide the transitions, not just the chronology. By experimenting with brushstroke weight and color saturation—rougher, darker strokes for ancient dragons, smoother and more intricate lines for later dynasties—I was able to weave historical shifts into the visual texture itself. I also added subtle cultural motifs in the backgrounds to anchor each era without interrupting the flow. This project reinforced my belief that animation can serve as a powerful tool for cultural preservation, but only when the visual language is as thoughtfully constructed as the historical content.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Video -->
+        <section class="project-gallery-section project-video-section">
             <div class="project-gallery-header">
-                <p class="section-tag">GALLERY</p>
-                <h2 class="section-title">Frames, Screenshots & Development</h2>
+                <p class="section-tag">PROJECT VIDEO</p>
+                <h2 class="section-title">Video Presentation</h2>
             </div>
 
-            <div class="project-gallery-grid">
-                <div class="placeholder-card gallery-card large-gallery-card">
-                    <span>WIDE IMAGE / SCREENSHOT</span>
+            <div class="project-video-wrapper">
+
+
+
+                <div class="project-youtube-embed">
+                    <iframe src="https://www.youtube.com/embed/j0XDtj9M8vc"
+                            title="Project Video"
+                            frameborder="0"
+                            allowfullscreen>
+                    </iframe>
                 </div>
 
-                <div class="placeholder-card gallery-card">
-                    <span>PROCESS IMAGE 01</span>
+            </div>
+        </section>
+
+        <!-- Image Archive -->
+        <section class="project-gallery-section image-archive-section">
+            <div class="project-gallery-header media-archive-header">
+                <div>
+                    <p class="section-tag">IMAGE ARCHIVE</p>
+                    <h2 class="section-title">Annotated Visual Process</h2>
+                    <p class="section-desc">
+                        A curated archive of process images and visual development.
+                    </p>
                 </div>
 
-                <div class="placeholder-card gallery-card">
-                    <span>PROCESS IMAGE 02</span>
+                <div class="filmstrip-status-ui">
+                    <span class="filmstrip-status-label">ARCHIVE ONLINE</span>
+                    <span class="filmstrip-status-line"></span>
                 </div>
+            </div>
+
+            <div class="media-viewer-main">
+                <div class="media-viewer-display">
+                    <div class="placeholder-card media-viewer-hero" id="imageArchiveHero">
+                        <span>MAIN IMAGE DISPLAY</span>
+                    </div>
+                </div>
+
+                <div class="media-viewer-caption" id="imageArchiveCaption">
+                    <span class="film-caption-index">01</span>
+                    <p>
+                        Early visual exploration and mood framing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="media-thumbnail-strip">
+                <button class="media-thumb is-active" type="button" data-image-label="01" data-image-caption="Early visual exploration and mood framing.">
+                    <span class="media-thumb-index">01</span>
+                    <span class="media-thumb-title">Process 01</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="02" data-image-caption="Layout revision and structural development.">
+                    <span class="media-thumb-index">02</span>
+                    <span class="media-thumb-title">Process 02</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="03" data-image-caption="Refined visual direction with clearer hierarchy.">
+                    <span class="media-thumb-index">03</span>
+                    <span class="media-thumb-title">Process 03</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="04" data-image-caption="Near-final process state and visual refinement.">
+                    <span class="media-thumb-index">04</span>
+                    <span class="media-thumb-title">Process 04</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="05" data-image-caption="Final outcome and presentation reference.">
+                    <span class="media-thumb-index">05</span>
+                    <span class="media-thumb-title">Final</span>
+                </button>
             </div>
         </section>
     </main>

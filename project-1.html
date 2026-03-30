@@ -36,8 +36,11 @@
                 </div>
 
                 <div class="project-hero-right">
-                    <div class="placeholder-card project-hero-image">
-                        <span>PROJECT HERO IMAGE PLACEHOLDER</span>
+                    <div class="project-hero-image-frame fx-hero-image-frame">
+                        <img class="project-hero-image-real" src="images/Image.jpg" alt="Project 1 hero image">
+                        <div class="hero-image-overlay-grid"></div>
+                        <div class="hero-image-overlay-vignette"></div>
+                        <div class="hero-image-overlay-scan"></div>
                     </div>
                 </div>
             </div>
@@ -100,38 +103,126 @@
                 <div class="project-text-content">
                     <h2>Concept & Development</h2>
                     <p>
-                        Use this section to explain the visual language, concept development,
-                        references, research, or narrative idea behind the project.
+                        My initial goal for *Crossroads* was to explore how spatial perception could be dynamically reconstructed through animation. Inspired by the classic Peking Opera *Three Forks*, I wanted to combine ink-wash painting style with a night fight scene to create a one- to two-minute animation. I chose ink-wash because its fluidity and ambiguous edges allow space to become flexible rather than fixed, offering a departure from Western linear perspective and chiaroscuro. I wanted to see whether this ancient visual language could express emotional tension and movement more freely.
                     </p>
                     <p>
-                        You can also talk about your role in the process, what you learned,
-                        and how the work evolved over time.
+                        The main challenge was balancing narrative clarity with spatial ambiguity. In early drafts, the fight sequences became visually chaotic—viewers could not follow who was fighting whom. I revised the storyboard by anchoring key beats with clearer character silhouettes while preserving the ink's bleeding edges. I also experimented with brushstroke density to differentiate foreground and background. Through this process, I learned that abstraction in animation requires deliberate rhythm control. This project ultimately showed me that returning to traditional painting techniques can expand the expressive possibilities of digital animation.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery -->
-        <section class="project-gallery-section">
-            <div class="project-gallery-header">
-                <p class="section-tag">GALLERY</p>
-                <h2 class="section-title">Process & Visual Documentation</h2>
-            </div>
-
-            <div class="project-gallery-grid">
-                <div class="placeholder-card gallery-card large-gallery-card">
-                    <span>WIDE IMAGE / SCREENSHOT</span>
+        <!-- Reflection -->
+        <section class="project-text-section">
+            <div class="project-text-grid">
+                <div class="project-text-label">
+                    <span>REFLECTION</span>
                 </div>
 
-                <div class="placeholder-card gallery-card">
-                    <span>PROCESS IMAGE 01</span>
-                </div>
-
-                <div class="placeholder-card gallery-card">
-                    <span>PROCESS IMAGE 02</span>
+                <div class="project-text-content">
+                    <h2>Process Reflection</h2>
+                    <p>
+                        This project began with a clear visual intention, but its development changed
+                        significantly during production. At the beginning, the focus was mainly on mood,
+                        presentation, and overall visual coherence. However, through testing and revision,
+                        I realised that some of the early ideas were either too broad or too visually heavy,
+                        which made the work harder to control.
+                    </p>
+                    <p>
+                        One of the most important lessons from this project was learning how to balance
+                        concept, structure, and visual clarity. Instead of simply adding more elements,
+                        I had to refine what was essential and think more carefully about how each image,
+                        layout, and design decision contributed to the final reading of the project.
+                    </p>
                 </div>
             </div>
         </section>
+
+        <!-- Project Video -->
+        <section class="project-gallery-section project-video-section">
+            <div class="project-gallery-header">
+                <p class="section-tag">PROJECT VIDEO</p>
+                <h2 class="section-title">Video Presentation</h2>
+            </div>
+
+            <div class="project-video-wrapper">
+               
+
+                
+            <div class="project-youtube-embed">
+                <iframe
+                    src="https://www.youtube.com/embed/M0jtCQc4Oqg"
+                    title="Project Video"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+           
+            </div>
+        </section>
+
+        <!-- Image Archive -->
+        <section class="project-gallery-section image-archive-section">
+            <div class="project-gallery-header media-archive-header">
+                <div>
+                    <p class="section-tag">IMAGE ARCHIVE</p>
+                    <h2 class="section-title">Annotated Visual Process</h2>
+                    <p class="section-desc">
+                        A curated archive of process images and visual development.
+                    </p>
+                </div>
+
+                <div class="filmstrip-status-ui">
+                    <span class="filmstrip-status-label">ARCHIVE ONLINE</span>
+                    <span class="filmstrip-status-line"></span>
+                </div>
+            </div>
+
+            <div class="media-viewer-main">
+                <div class="media-viewer-display">
+                    <div class="placeholder-card media-viewer-hero" id="imageArchiveHero">
+                        <span>MAIN IMAGE DISPLAY</span>
+                    </div>
+                </div>
+
+                <div class="media-viewer-caption" id="imageArchiveCaption">
+                    <span class="film-caption-index">01</span>
+                    <p>
+                        Early visual exploration and mood framing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="media-thumbnail-strip">
+                <button class="media-thumb is-active" type="button" data-image-label="01" data-image-caption="Early visual exploration and mood framing.">
+                    <span class="media-thumb-index">01</span>
+                    <span class="media-thumb-title">Process 01</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="02" data-image-caption="Layout revision and structural development.">
+                    <span class="media-thumb-index">02</span>
+                    <span class="media-thumb-title">Process 02</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="03" data-image-caption="Refined visual direction with clearer hierarchy.">
+                    <span class="media-thumb-index">03</span>
+                    <span class="media-thumb-title">Process 03</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="04" data-image-caption="Near-final process state and visual refinement.">
+                    <span class="media-thumb-index">04</span>
+                    <span class="media-thumb-title">Process 04</span>
+                </button>
+
+                <button class="media-thumb" type="button" data-image-label="05" data-image-caption="Final outcome and presentation reference.">
+                    <span class="media-thumb-index">05</span>
+                    <span class="media-thumb-title">Final</span>
+                </button>
+            </div>
+        </section>
+
+       
+        
     </main>
 
     <script src="js/main.js"></script>

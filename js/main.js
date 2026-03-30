@@ -270,3 +270,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.querySelectorAll(".image-archive-section").forEach((section) => {
+    const thumbs = section.querySelectorAll(".media-thumb");
+    const captionBox = section.querySelector("#imageArchiveCaption");
+
+    thumbs.forEach((thumb) => {
+        thumb.addEventListener("mouseenter", function () {
+            thumbs.forEach((item) => item.classList.remove("is-active"));
+            this.classList.add("is-active");
+
+            const label = this.dataset.imageLabel || "01";
+            const caption = this.dataset.imageCaption || "";
+
+            if (captionBox) {
+                captionBox.innerHTML = `
+                    <span class="film-caption-index">${label}</span>
+                    <p>${caption}</p>
+                `;
+            }
+        });
+    });
+});

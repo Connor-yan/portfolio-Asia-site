@@ -2118,3 +2118,1024 @@ body {
         bottom: 14px;
     }
 }
+
+/* =========================
+   Reflection + Film Strip
+   ========================= */
+
+.filmstrip-section {
+    margin-top: 8px;
+}
+
+.filmstrip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filmstrip-toggle-btn {
+    min-width: 190px;
+}
+
+.filmstrip-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease, opacity 0.6s ease;
+    opacity: 0;
+}
+
+    .filmstrip-wrapper.is-open {
+        max-height: 2200px;
+        opacity: 1;
+    }
+
+.filmstrip-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 18px;
+}
+
+/* 单张胶卷帧 */
+.film-frame {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 18px;
+    padding: 18px;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+}
+
+    /* 胶卷左右齿孔感 */
+    .film-frame::before,
+    .film-frame::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 16px;
+        height: 100%;
+        background: radial-gradient(circle, rgba(11,14,19,1) 5px, transparent 5.5px) center 12px / 16px 34px repeat-y;
+        opacity: 0.95;
+        z-index: 2;
+    }
+
+    .film-frame::before {
+        left: 0;
+    }
+
+    .film-frame::after {
+        right: 0;
+    }
+
+.film-image {
+    min-height: 240px;
+    position: relative;
+    z-index: 1;
+    margin-left: 14px;
+    margin-right: 14px;
+    clip-path: polygon( 0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px) );
+}
+
+.film-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding-right: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.film-caption-index {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #91a0b8;
+}
+
+.film-caption p {
+    color: rgba(255,255,255,0.76);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* 展开时每帧轻微出现 */
+.filmstrip-wrapper.is-open .film-frame {
+    animation: filmFrameFade 0.6s ease both;
+}
+
+    .filmstrip-wrapper.is-open .film-frame:nth-child(2) {
+        animation-delay: 0.06s;
+    }
+
+    .filmstrip-wrapper.is-open .film-frame:nth-child(3) {
+        animation-delay: 0.12s;
+    }
+
+    .filmstrip-wrapper.is-open .film-frame:nth-child(4) {
+        animation-delay: 0.18s;
+    }
+
+    .filmstrip-wrapper.is-open .film-frame:nth-child(5) {
+        animation-delay: 0.24s;
+    }
+
+@keyframes filmFrameFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .film-frame {
+        grid-template-columns: 1fr;
+    }
+
+    .film-image {
+        min-height: 180px;
+    }
+}
+
+/* =========================
+   Tech UI Film Strip
+   ========================= */
+
+.tech-filmstrip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filmstrip-status-ui {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 180px;
+}
+
+.filmstrip-status-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #91a0b8;
+    white-space: nowrap;
+}
+
+.filmstrip-status-line {
+    position: relative;
+    flex: 1;
+    height: 1px;
+    background: rgba(255,255,255,0.14);
+    overflow: hidden;
+}
+
+    .filmstrip-status-line::after {
+        content: "";
+        position: absolute;
+        left: -30%;
+        top: 0;
+        width: 30%;
+        height: 100%;
+        background: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 100% );
+        animation: techScanLine 2.4s linear infinite;
+    }
+
+@keyframes techScanLine {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.tech-filmstrip-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 18px;
+}
+
+    .tech-filmstrip-wrapper::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px);
+        background-size: 100% 14px;
+        opacity: 0.25;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+.tech-filmstrip-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.tech-film-frame {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 18px;
+    padding: 18px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+    transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
+}
+
+    /* 胶卷两侧齿孔 */
+    .tech-film-frame::before,
+    .tech-film-frame::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 16px;
+        height: 100%;
+        background: radial-gradient(circle, rgba(11,14,19,1) 5px, transparent 5.5px) center 12px / 16px 34px repeat-y;
+        opacity: 0.9;
+        z-index: 2;
+    }
+
+    .tech-film-frame::before {
+        left: 0;
+    }
+
+    .tech-film-frame::after {
+        right: 0;
+    }
+
+    /* 默认更克制 */
+    .tech-film-frame .film-image {
+        min-height: 220px;
+        margin-left: 14px;
+        margin-right: 14px;
+        opacity: 0.72;
+        filter: brightness(0.82) contrast(0.95);
+        transform: scale(0.985);
+        transition: opacity 0.35s ease, filter 0.35s ease, transform 0.35s ease, border-color 0.35s ease;
+    }
+
+    .tech-film-frame .film-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding-right: 14px;
+        opacity: 0.72;
+        transform: translateX(8px);
+        transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .tech-film-frame .film-caption-index {
+        font-size: 12px;
+        letter-spacing: 3px;
+        color: #91a0b8;
+    }
+
+    .tech-film-frame .film-caption p {
+        color: rgba(255,255,255,0.72);
+        line-height: 1.8;
+        font-size: 15px;
+    }
+
+/* hover 激活 */
+.tech-filmstrip-wrapper:hover .tech-film-frame {
+    border-color: rgba(255,255,255,0.14);
+}
+
+.tech-film-frame:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255,255,255,0.24);
+    background: rgba(255,255,255,0.04);
+    box-shadow: 0 18px 36px rgba(0,0,0,0.22);
+}
+
+    .tech-film-frame:hover .film-image {
+        opacity: 1;
+        filter: brightness(1) contrast(1);
+        transform: scale(1);
+    }
+
+    .tech-film-frame:hover .film-caption {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+/* 每帧左边加一条细扫描线 */
+.tech-film-frame::marker {
+    display: none;
+}
+
+.tech-film-frame .film-image::after {
+    content: "";
+    position: absolute;
+    left: -20%;
+    top: 0;
+    width: 18%;
+    height: 100%;
+    background: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.16) 50%, rgba(255,255,255,0) 100% );
+    animation: imageSweep 3.2s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes imageSweep {
+    0% {
+        left: -22%;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+@media (max-width: 900px) {
+    .tech-film-frame {
+        grid-template-columns: 1fr;
+    }
+
+        .tech-film-frame .film-image {
+            min-height: 180px;
+        }
+}
+
+/* =========================
+   Project Media Archive
+   ========================= */
+
+.media-archive-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.media-archive-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.media-viewer-main {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    align-items: stretch;
+}
+
+.media-viewer-display,
+.media-viewer-caption {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.media-viewer-hero {
+    min-height: 420px;
+    clip-path: polygon( 0 0, calc(100% - 26px) 0, 100% 26px, 100% 100%, 26px 100%, 0 calc(100% - 26px) );
+}
+
+.media-viewer-caption {
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+    .media-viewer-caption p {
+        color: rgba(255,255,255,0.76);
+        line-height: 1.8;
+        font-size: 15px;
+    }
+
+/* YouTube iframe 外壳 */
+.media-video-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    overflow: hidden;
+    clip-path: polygon( 0 0, calc(100% - 26px) 0, 100% 26px, 100% 100%, 26px 100%, 0 calc(100% - 26px) );
+    background: #000;
+}
+
+    .media-video-wrapper iframe {
+        width: 100%;
+        height: 420px;
+        display: block;
+    }
+
+/* 缩略档案条 */
+.media-thumbnail-strip {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.media-thumb {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 92px;
+    padding: 14px;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.7);
+    transition: transform 0.28s ease, border-color 0.28s ease, background 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+    .media-thumb::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background: rgba(255,255,255,0.9);
+        transition: width 0.28s ease;
+    }
+
+    .media-thumb:hover,
+    .media-thumb.is-active {
+        transform: translateY(-3px);
+        border-color: rgba(255,255,255,0.24);
+        background: rgba(255,255,255,0.05);
+        color: #ffffff;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+    }
+
+        .media-thumb:hover::after,
+        .media-thumb.is-active::after {
+            width: 100%;
+        }
+
+.media-thumb-index {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #91a0b8;
+}
+
+.media-thumb-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* 响应式 */
+@media (max-width: 1000px) {
+    .media-viewer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .media-thumbnail-strip {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .media-thumbnail-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .media-viewer-hero,
+    .media-video-wrapper,
+    .media-video-wrapper iframe {
+        min-height: 260px;
+        height: 260px;
+    }
+}
+
+/* =========================
+   Project Video Module
+   ========================= */
+
+.project-video-section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.project-video-wrapper {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 16px;
+}
+
+.project-video-placeholder {
+    min-height: 420px;
+    clip-path: polygon( 0 0, calc(100% - 26px) 0, 100% 26px, 100% 100%, 26px 100%, 0 calc(100% - 26px) );
+}
+
+.project-youtube-embed {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    overflow: hidden;
+    background: #000;
+    clip-path: polygon( 0 0, calc(100% - 26px) 0, 100% 26px, 100% 100%, 26px 100%, 0 calc(100% - 26px) );
+}
+
+    .project-youtube-embed iframe {
+        width: 100%;
+        height: 420px;
+        display: block;
+    }
+
+/* =========================
+   Image Archive Module
+   ========================= */
+
+.image-archive-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .project-video-placeholder,
+    .project-youtube-embed,
+    .project-youtube-embed iframe {
+        min-height: 240px;
+        height: 240px;
+    }
+}
+
+/* =========================
+   Real Hero Image
+   ========================= */
+
+.project-hero-image-frame {
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    clip-path: polygon( 0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 28px 100%, 0 calc(100% - 28px) );
+}
+
+.project-hero-image-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 小屏适配 */
+@media (max-width: 1100px) {
+    .project-hero-image-frame {
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-hero-image-frame {
+        height: 260px;
+    }
+}
+/* =========================
+   Hero Image FX
+   ========================= */
+
+.fx-hero-image-frame {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+    .fx-hero-image-frame:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 24px 48px rgba(0,0,0,0.28);
+        border-color: rgba(255,255,255,0.18);
+    }
+
+.project-hero-image-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.02);
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: brightness(0.9) contrast(1.03) saturate(0.95);
+}
+
+.fx-hero-image-frame:hover .project-hero-image-real {
+    transform: scale(1.06);
+    filter: brightness(0.97) contrast(1.05) saturate(1);
+}
+
+/* 细网格 */
+.hero-image-overlay-grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 28px 28px;
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* 暗角 */
+.hero-image-overlay-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.28) 100%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* 扫描光条 */
+.hero-image-overlay-scan {
+    position: absolute;
+    top: 0;
+    left: -28%;
+    width: 28%;
+    height: 100%;
+    background: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0) 100% );
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 4;
+    animation: heroImageScan 4.2s linear infinite;
+}
+
+@keyframes heroImageScan {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+/* =========================
+   Operator ID Card Portrait
+   ========================= */
+
+.operator-id-card {
+    width: min(420px, 100%);
+    margin-left: auto;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon( 0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 24px 100%, 0 calc(100% - 24px) );
+    box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+}
+
+.operator-id-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.025);
+}
+
+.operator-id-tag,
+.operator-id-code {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #91a0b8;
+}
+
+.operator-id-photo-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: rgba(255,255,255,0.02);
+}
+
+    /* 轻微资料扫描网格 */
+    .operator-id-photo-frame::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+        background-size: 24px 24px;
+        opacity: 0.24;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    /* 暗角 */
+    .operator-id-photo-frame::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, rgba(0,0,0,0) 42%, rgba(0,0,0,0.24) 100%);
+        pointer-events: none;
+        z-index: 3;
+    }
+
+.operator-id-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.94) contrast(1.03) saturate(0.96);
+    transform: scale(1.01);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.operator-id-card:hover .operator-id-photo {
+    transform: scale(1.04);
+    filter: brightness(1) contrast(1.05) saturate(1);
+}
+
+.operator-id-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.operator-id-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.operator-id-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #91a0b8;
+}
+
+.operator-id-line strong {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.92);
+}
+
+/* 小屏幕适配 */
+@media (max-width: 1100px) {
+    .operator-id-card {
+        margin-left: 0;
+        width: min(360px, 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .operator-id-card {
+        width: min(280px, 100%);
+    }
+}
+
+/* =========================
+   About Operator FX
+   ========================= */
+
+/* 左侧档案标题区 */
+.operator-profile-left {
+    position: relative;
+}
+
+.operator-profile-topline {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.operator-profile-code {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #91a0b8;
+    white-space: nowrap;
+}
+
+.operator-profile-readline {
+    position: relative;
+    flex: 1;
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+    overflow: hidden;
+}
+
+    .operator-profile-readline::after {
+        content: "";
+        position: absolute;
+        left: -24%;
+        top: 0;
+        width: 24%;
+        height: 100%;
+        background: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 100% );
+        animation: operatorReadLineMove 2.8s linear infinite;
+    }
+
+@keyframes operatorReadLineMove {
+    0% {
+        left: -24%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* 标题轻微发光感 */
+.operator-profile-left .project-detail-title {
+    position: relative;
+    text-shadow: 0 0 18px rgba(255,255,255,0.04);
+}
+
+/* 档案照卡整体呼吸 */
+.operator-id-card {
+    animation: operatorCardPulse 4.6s ease-in-out infinite;
+}
+
+@keyframes operatorCardPulse {
+    0% {
+        border-color: rgba(255,255,255,0.12);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+    }
+
+    50% {
+        border-color: rgba(255,255,255,0.18);
+        box-shadow: 0 24px 46px rgba(0,0,0,0.28);
+    }
+
+    100% {
+        border-color: rgba(255,255,255,0.12);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+    }
+}
+
+/* 档案照顶部栏更像资料页 */
+.operator-id-topbar {
+    position: relative;
+    overflow: hidden;
+}
+
+    .operator-id-topbar::after {
+        content: "";
+        position: absolute;
+        left: -30%;
+        top: 0;
+        width: 30%;
+        height: 100%;
+        background: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100% );
+        animation: operatorTopbarSweep 3.6s linear infinite;
+    }
+
+@keyframes operatorTopbarSweep {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+/* 档案照图片扫描感增强 */
+.operator-id-photo-frame {
+    position: relative;
+}
+
+    .operator-id-photo-frame .operator-id-photo {
+        position: relative;
+        z-index: 1;
+    }
+
+    .operator-id-photo-frame::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+        background-size: 24px 24px;
+        opacity: 0.22;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .operator-id-photo-frame::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, rgba(0,0,0,0) 42%, rgba(0,0,0,0.24) 100%);
+        pointer-events: none;
+        z-index: 3;
+    }
+
+/* 额外扫描条 */
+.operator-id-card::before {
+    content: "";
+    position: absolute;
+    left: -20%;
+    top: 42px;
+    width: 20%;
+    height: calc(100% - 42px - 58px);
+    background: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100% );
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 4;
+    animation: operatorPhotoScan 4.2s linear infinite;
+}
+
+@keyframes operatorPhotoScan {
+    0% {
+        left: -22%;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+/* 底部资料字段 hover 激活 */
+.operator-id-line {
+    transition: background 0.28s ease, border-color 0.28s ease, transform 0.28s ease;
+    padding: 6px 8px;
+    border: 1px solid transparent;
+}
+
+    .operator-id-line:hover {
+        background: rgba(255,255,255,0.035);
+        border-color: rgba(255,255,255,0.12);
+        transform: translateX(3px);
+    }
+
+/* 如果 about 页面里还有标签块，也让它更像档案面板 */
+.about-tags span {
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+    .about-tags span:hover {
+        transform: translateY(-2px);
+        border-color: rgba(255,255,255,0.22);
+        background: rgba(255,255,255,0.06);
+    }
+
+/* 整体更克制一点，移动端减少动画压力 */
+@media (max-width: 768px) {
+    .operator-id-card,
+    .operator-profile-readline::after,
+    .operator-id-topbar::after,
+    .operator-id-card::before {
+        animation-duration: 5.4s;
+    }
+}
+
+.rotator-image-frame {
+    overflow: hidden;
+    position: relative;
+    background: rgba(255,255,255,0.03);
+}
+
+.rotator-image-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.92) contrast(1.03);
+}
+
+.rotator-card:hover .rotator-image-real {
+    transform: scale(1.05);
+    filter: brightness(1) contrast(1.05);
+}
+
+/* Projects real cover images */
+.rotator-image-frame {
+    overflow: hidden;
+    position: relative;
+    background: rgba(255,255,255,0.03);
+}
+
+.rotator-image-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.92) contrast(1.03);
+}
+
+.rotator-card:hover .rotator-image-real {
+    transform: scale(1.05);
+    filter: brightness(1) contrast(1.05);
+}
